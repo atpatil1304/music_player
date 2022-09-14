@@ -1,0 +1,136 @@
+.main
+{
+    height: 97vh;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+    background-image: url("https://img.wallpapersafari.com/desktop/1024/576/80/97/lMfmeO.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+.music_container
+{
+    
+    /* margin:auto; */
+    border:2px solid grey;
+   
+    position: absolute;
+    width: 20vw;
+    height: 70vh;
+    box-shadow:10px;
+    border-radius: 10px;
+    text-align: center;
+    
+    box-shadow: 10px 10px 10px  rgb(112, 118, 128);
+    background-color:#866656;
+    
+}
+
+#musicName
+{
+    margin-top:4rem;
+    word-spacing: 4px;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px rgb(230, 172, 172);
+    font-size: 2rem;
+    font-weight: 2rem;
+}
+
+#image{
+    margin-top: 1rem;
+    width: 13vw;
+    height:22vh;
+    border-radius: 50%;
+
+}
+
+
+
+/* Progress Bar Style*/
+.progressbar_container{
+    width:17vw;
+    height: auto;
+    padding: 1rem;
+    margin-top: 1rem;
+    
+}
+.progress_duration{
+    margin-left: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.progress_div{
+    width:17vw;
+    height: 0.2rem;
+    margin-left: 0.5rem;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.07),0 2px 4px rgba(0,0,0,0.07),0 4px 8px rgba(0,0,0,0.07),0 8px 16px rgba(0,0,0,0.07),0 16px 32px rgba(0,0,0,0.07),0 32px 64px rgba(0,0,0,0.07);
+    border-radius: 4rem;
+    border: 0.2px solid black;
+    position: relative;
+    margin-top: 0.5rem;
+    /* transition: all 1s linear;
+    -moz-transition:all 1s linear ;
+    -o-transition: all 1s linear;
+    -webkit-transition:all 1s linear ; */
+    cursor: pointer;
+    -webkit-appearance: none;
+    appearance: none;
+
+}
+
+.progress{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: rgb(37, 33, 33);
+    border-radius: 4rem;
+   
+    /* transition: all 1s linear;
+    -moz-transition:all 1s linear ;
+    -o-transition: all 1s linear;
+    -webkit-transition:all 1s linear ; */
+    cursor: pointer;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+/* Controls style */
+.controls
+{
+
+    width:13vw;
+    display: flex;
+    justify-content: space-between;
+    
+    cursor: pointer;
+    margin: auto;
+    margin-top: 1.5rem;
+
+    
+}
+.fa-solid:hover
+{
+    color:grey
+}
+
+/*add anime class to rorate*/
+
+.anime
+{
+    animation:rotatePlayer 10s linear infinite;
+}
+
+@keyframes rotatePlayer {
+    from {transform : rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+    
+}
+

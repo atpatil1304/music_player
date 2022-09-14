@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/music.css">
+</head>
+
+<body class="main">
+
+    <div class="music_container">
+        <h2 id="musicName">Dil meri na Sune</h2>
+        <h3 id="artistName">A R Rahman</h3>
+
+        <img src="images/img1.jpeg" id="image">
+        <audio src="songs/song1.mp3 "></audio>
+
+        <!-- Progress Bar -->
+        <div class="progressbar_container" id="progress_container">
+            <div class="progress_duration">
+                <div id="current_time">
+                    0:0
+                </div>
+                <div id="duration">
+                    3:40    
+                </div>
+            </div>
+            <div class="progress_div" id="progress_div">
+                <div class="progress" id="progress"></div>
+            </div>
+        </div>
+
+        <!-- controls -->
+        <div class="controls">
+            <i class="fa-2x fa-solid fa-backward-fast" id="prev"></i>
+            <i class="fa-2x fa-solid fa-play c1" id="play"></i>
+            <i class="fa-2x fa-solid fa-forward-fast c1" id="next"></i>
+        </div>
+    </div>
+
+
+    <script src="javascript/music.js"></script>
+</body>
+
+</html>
